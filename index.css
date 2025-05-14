@@ -99,15 +99,26 @@ body {
 }
 
 .main-image {
-    width: 450px;
+    width: 400px;
+    max-width: 100%;
     margin-bottom: 25px;
     transition: transform 0.3s;
     
 }
 .riria-image {
     width: 400px;
+    max-width: 100%;
     margin-bottom: 25px;
     border-radius: 15px;
+    
+}
+
+.movie-image {
+    width: 500px;
+    max-width: 100%;
+    margin-bottom: 25px;
+    transition: transform 0.3s;
+    border-radius: 5%;
     
 }
 
@@ -209,15 +220,26 @@ body {
     margin-bottom: 10px; /* 下に余白 (読みやすく) */
 }
 
-.sub1 {
+.Appearance {
     padding: 80px;
     color: #ffffff;
     background-color: #232323; /* ← 役者紹介(main)とおそろ */
     text-align: center;
 }
 
+.movie {
+    padding: 80px;
+    color: #ffffff;
+    background-color: #232323;
+    text-align: center;
+} 
+
+.movie h2 {
+    margin-bottom: 50px;
+}
+
 .main h2,
-.sub1 h2 {
+.Appearance h2 {
     font-size: 36px;  
     margin-bottom: 30px; 
 }
@@ -225,6 +247,7 @@ body {
 .actor-profile.reverse {
     flex-direction: row-reverse; /* 画像右・説明左 */
 }
+
 .contact-icons {
     display: flex;
     justify-content: center;
@@ -242,7 +265,9 @@ body {
 }
 
 /* ホバーでちょっと大きく */
-.contact-image:hover {
+
+
+.movie-image:hover {
     transform: scale(1.1);
 }
 .contact {
@@ -253,5 +278,12 @@ body {
 }
 .main-image:hover {
     transform: scale(1.1);
+}
+
+.movie {
+    padding: 80px;
+    color: #ffffff;
+    background-color: #232323; 
+    text-align: center;
 }
 
